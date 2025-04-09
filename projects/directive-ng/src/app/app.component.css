@@ -1,0 +1,42 @@
+h1 {
+    color: #833AB4;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.warning {
+    color: #F56040;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.danger {
+    color: #E1306C; 
+    font-size: small;
+    font-size: xx-large;
+}
+
+.success {
+    color: #C13584; 
+    font-size: xx-large;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: medium;
+    background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCB045); /* Instagram gradient */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(2.0);
+}

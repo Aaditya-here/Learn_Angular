@@ -1,0 +1,59 @@
+<h1>Directive NG</h1>
+
+<!-- Conditional Display -->
+<p *ngIf="isDisplay">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae natus quod illo iste nam temporibus nulla quaerat ut ratione cumque doloremque cum quam, enim odit atque distinctio. Deleniti, odio!
+</p>
+
+<!-- Show/Hide Button -->
+<button (click)="showHide()">{{ buttonName }}</button>
+
+<br><br>
+
+<!-- ngFor Example -->
+<h3>ngFor</h3>
+<table border="5">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of Students">
+            <td>{{ s.id }}</td>
+            <td>{{ s.name }}</td>
+            <td>{{ s.age }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Attribute Directive -->
+<h3>Attribute Directive</h3>
+
+<!-- ngSwitch Example -->
+<h3>ngSwitch</h3>
+<select name="switchcase" [(ngModel)]="selectedTheme">
+    <option value="red">RED</option>
+    <option value="blue">BLUE</option>
+    <option value="green">GREEN</option>
+</select>
+
+<div [ngSwitch]="selectedTheme">
+    <p>changes will be below </p>
+    <p *ngSwitchCase="'red'">Red</p>
+    <p *ngSwitchCase="'blue'">Blue</p>
+    <p *ngSwitchCase="'green'">Green</p>
+    <p *ngSwitchDefault>Choose a color</p>
+</div>
+
+<!-- ngClass Example -->
+<h3>ngClass</h3>
+<button (click)="num = 1">1</button>
+<button (click)="num = 2">2</button>
+<button (click)="num = 3">3</button>
+
+<p [ngClass]="{'danger': num === 1, 'warning': num === 2, 'success': num === 3}">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique vero atque, fuga officiis totam neque iusto, molestias autem hic repudiandae eos explicabo dolor in praesentium error a aut, quod soluta.
+</p>

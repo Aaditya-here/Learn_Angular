@@ -1,0 +1,42 @@
+/* General Reset */
+body, h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #141414;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Styling */
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+/* Menu Styling */
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #e50914;
+}
